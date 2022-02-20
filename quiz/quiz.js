@@ -7,7 +7,8 @@ options.forEach((opt) =>
       ? opt.classList.add("right_ans")
       : opt.classList.add("wrong_ans");
 
-    correctOption.className = "question_option correct_ans right_ans";
+    correctOption.className =
+      "h4 font_weight_700 question_option correct_ans right_ans";
     setTimeout(() => (window.location = "/result/result.html"), 1000);
   })
 );

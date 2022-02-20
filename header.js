@@ -20,7 +20,7 @@ document.querySelector("#mode").addEventListener("click", () => {
 
 function setLightmode(light) {
   if (light) {
-    modeBtn.className = "fas fa-lightbulb";
+    modeBtn.className = "fas fa-sun";
     document.documentElement.setAttribute("stv-mode", "light");
   } else {
     modeBtn.className = "fas fa-moon";

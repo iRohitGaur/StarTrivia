@@ -1,0 +1,8 @@
+.back_title_wrapper {
+  position: relative;
+  width: 100%;
+}
+.category_cta {
+  position: absolute;
+  left: 0;
+}

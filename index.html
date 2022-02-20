@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>StarTrivia - Home - Rohit Gaur</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/utils/elements.css" />
+  </head>
+  <body>
+    <header>
+      <div id="stv-logo" class="stv_logo_wrapper flex_row">
+        <img class="stv_logo" src="/assets/starling.svg" alt="" />
+        <div class="flex_column">
+          <span class="stv_logo_text">StarTrivia</span>
+          <span class="stv_logo_caption">a quiz around birds</span>
+        </div>
+      </div>
+
+      <div class="stv_search flex_row flex_align_center">
+        <div class="sui_input input_icon">
+          <div class="input_desc">
+            <span class="input_lbl">search</span>
+            <span class="input_info"></span>
+          </div>
+          <input type="text" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="stv_cta flex_row">
+        <button id="mode" class="sui_btn btn_icon_fa">
+          <i id="mode-btn" class="fas fa-lightbulb"></i>
+        </button>
+        <button id="stv-login" class="sui_btn">Login</button>
+      </div>
+      <div class="mobile_search">
+        <div class="sui_input input_icon">
+          <div class="input_desc">
+            <span class="input_lbl">search</span>
+            <span class="input_info"></span>
+          </div>
+          <input type="text" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="landing_wrapper flex_row flex_gap2">
+      <div class="title_wrapper flex_column flex_align_center flex_gap2">
+        <h1 class="app_title">StarTrivia</h1>
+        <h5 class="app_caption">
+          Test your knowledge in the world of birds; fly high with your name on
+          top of the scoreboard. Select any category to see the relevant quiz.
+        </h5>
+        <div
+          class="quiz_categories flex_row flex_align_center flex_wrap flex_justify_around flex_gap2"
+        >
+          <div class="category_wrapper flex_column flex_align_center flex_gap1">
+            <i class="fas fa-dove"></i>
+            <h5>Bird Quiz</h5>
+            <button class="sui_btn category-btn">Browse</button>
+          </div>
+          <div class="category_wrapper flex_column flex_align_center flex_gap1">
+            <i class="fas fa-camera"></i>
+            <h5>Photograhy Quiz</h5>
+            <button class="sui_btn category-btn">Browse</button>
+          </div>
+          <div class="category_wrapper flex_column flex_align_center flex_gap1">
+            <i class="fas fa-tree"></i>
+            <h5>Sanctuary Quiz</h5>
+            <button class="sui_btn category-btn">Browse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="header.js"></script>
+    <script src="/utils/elements.js"></script>
+  </body>
+</html>

@@ -12,7 +12,7 @@ options.forEach((opt) =>
   })
 );
 
-const backBtn = document.querySelector("#go-back");
+const backBtn = document.querySelector("#quit-quiz");
 backBtn.addEventListener("click", () => {
   window.location = "/category/category.html";
 });

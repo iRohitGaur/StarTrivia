@@ -1,0 +1,184 @@
+@import url("https://starlingui.netlify.app/sui.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("/color.css");
+::-webkit-scrollbar-thumb {
+  background-color: var(--SECONDARY);
+}
+body {
+  background: var(--PRIMARY);
+  color: var(--TEXT);
+  display: grid;
+  place-content: center;
+  grid-template-areas:
+    "header"
+    "main";
+  grid-template-rows: auto 1fr;
+  width: 100vw;
+  height: 100vh;
+  gap: 2rem;
+}
+/***** Header Starts *****/
+header {
+  grid-area: header;
+  padding: 1rem 4rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: "logo search cta";
+  place-items: center;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header::before {
+  content: "";
+  width: 100vw;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0 0 1px 1px var(--SHADE);
+}
+header,
+header::before,
+header input,
+header .input_lbl {
+  background: var(--BG);
+}
+.stv_logo_wrapper {
+  gap: 1rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-right: auto;
+}
+.stv_logo_wrapper {
+  grid-area: logo;
+  cursor: pointer;
+}
+.stv_logo {
+  width: 4rem;
+  height: auto;
+}
+.stv_logo_text {
+  line-height: 1;
+}
+.stv_logo_caption {
+  font-size: 1.1rem;
+  color: var(--BG-BASE-TEXT);
+}
+header .sui_btn {
+  font-size: 1.2rem;
+}
+.sui_input input {
+  padding: 6px 15px 4px 15px;
+  border: 1px solid var(--BG-BASE-TEXT);
+}
+.input_icon input {
+  padding-left: 3.6rem;
+}
+.stv_search {
+  grid-area: search;
+}
+.stv_cta {
+  grid-area: cta;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+}
+#mode-btn {
+  font-size: 2.8rem;
+}
+.mobile_search {
+  grid-area: mobile-search;
+  display: none;
+}
+/***** Header Ends *****/
+main {
+  grid-area: main;
+  width: 100%;
+  padding: 2rem 0;
+}
+.landing_wrapper {
+  grid-area: main;
+  background: var(--BG);
+  padding: 4rem;
+  margin: auto;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 90vw;
+  height: fit-content;
+  overflow-y: scroll;
+}
+.title_wrapper {
+  width: 100%;
+}
+.app_title {
+  text-align: center;
+}
+.app_caption {
+  width: 60ch;
+  max-width: 95%;
+  text-align: justify;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+.category_wrapper {
+  color: var(--BG-BASE-TEXT);
+  border-radius: 8px;
+  background: var(--SHADE);
+  padding: 2rem;
+  width: 30ch;
+}
+.category_wrapper .fas,
+.category_wrapper .fab {
+  font-size: 5rem;
+  background: var(--BG);
+  padding: 1rem;
+  border-radius: 8px;
+}
+.category_wrapper:hover {
+  color: var(--BG);
+  background: var(--SECONDARY);
+  transition: all 0.5s ease;
+}
+.category_wrapper:hover .fas,
+.category_wrapper:hover .fab {
+  color: var(--SECONDARY);
+  transition: all 0.5s ease;
+}
+@media only screen and (max-width: 799px) {
+  :root {
+    font-size: 9px;
+  }
+  .back_title_wrapper .category_cta,
+  .back_title_wrapper .quiz_cta {
+    position: revert;
+    align-self: flex-start;
+  }
+  .back_title_wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mobile_search {
+    display: revert;
+    width: 100%;
+  }
+  header {
+    padding: 1rem 2rem;
+    grid-template-areas:
+      "logo search cta"
+      "mobile-search mobile-search mobile-search";
+  }
+  .stv_search .sui_input {
+    display: none;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .stv_cta {
+    gap: 0;
+  }
+}

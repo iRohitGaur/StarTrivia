@@ -1,0 +1,17 @@
+.result_option {
+  padding: 1rem 2rem;
+  background: var(--BG-BASE);
+  color: var(--PRIMARY);
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.result_option.right_ans {
+  background: var(--VARIANT-2-DARK2);
+  color: var(--BG);
+}
+.result_option.wrong_ans {
+  background: var(--VARIANT-1-DARK2);
+  color: var(--BG);
+}

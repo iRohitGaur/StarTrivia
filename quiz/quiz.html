@@ -21,9 +21,10 @@
       sizes="16x16"
       href="/assets/favicon/favicon-16x16.png"
     />
-    <title>StarTrivia - Home - Rohit Gaur</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>StarTrivia - Quiz - Rohit Gaur</title>
+    <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/utils/elements.css" />
+    <link rel="stylesheet" href="quiz.css" />
   </head>
   <body>
     <header>
@@ -65,34 +66,53 @@
 
     <div class="landing_wrapper flex_row flex_gap2">
       <div class="title_wrapper flex_column flex_align_center flex_gap2">
-        <h1 class="app_title">StarTrivia</h1>
-        <h5 class="app_caption">
-          Test your knowledge in the world of birds; fly high with your name on
-          top of the scoreboard. Select any category to see the relevant quiz.
-        </h5>
         <div
-          class="quiz_categories flex_row flex_align_center flex_wrap flex_justify_around flex_gap2"
+          class="back_title_wrapper flex_row flex_align_center flex_justify_center"
         >
-          <div class="category_wrapper flex_column flex_align_center flex_gap1">
+          <div class="quiz_cta flex_row flex_align_center flex_gap2">
+            <button
+              id="quit-quiz"
+              class="sui_btn btn_v1 flex_row flex_align_center flex_gap1"
+            >
+              <i class="fas fa-chevron-left"></i>
+              Quit
+            </button>
+          </div>
+          <h2 class="app_title">
             <i class="fas fa-dove"></i>
-            <h5>Bird Quiz</h5>
-            <button class="sui_btn category-btn">Browse</button>
-          </div>
-          <div class="category_wrapper flex_column flex_align_center flex_gap1">
-            <i class="fas fa-camera"></i>
-            <h5>Photograhy Quiz</h5>
-            <button class="sui_btn category-btn">Browse</button>
-          </div>
-          <div class="category_wrapper flex_column flex_align_center flex_gap1">
-            <i class="fas fa-tree"></i>
-            <h5>Sanctuary Quiz</h5>
-            <button class="sui_btn category-btn">Browse</button>
+            A-Z Birds
+          </h2>
+        </div>
+
+        <div class="question_score flex_row flex_align_center flex_gap1">
+          <span class="flex_row flex_align_center flex_gap1">
+            <h4>Question:</h4>
+            <h5>1/3</h5>
+          </span>
+          <span class="flex_row flex_align_center flex_gap1">
+            <h4>Score:</h4>
+            <h5>0</h5>
+          </span>
+        </div>
+
+        <div class="quiz_question_wrapper">
+          <h3 class="quiz_question">
+            _________ is an exceedingly large seabird, having a wingspan as much
+            as 11 feet across.
+          </h3>
+          <div
+            class="question_options_wrapper flex_column flex_align_center flex_gap1"
+          >
+            <span class="h4 font_weight_700 question_option correct_ans">Albatross</span>
+            <span class="h4 font_weight_700 question_option">Dove</span>
+            <span class="h4 font_weight_700 question_option">Razorbill</span>
+            <span class="h4 font_weight_700 question_option">Puffin</span>
           </div>
         </div>
       </div>
     </div>
-    <script src="app.js"></script>
-    <script src="header.js"></script>
+    <script src="quiz.js"></script>
+    <script src="/header.js"></script>
     <script src="/utils/elements.js"></script>
   </body>
 </html>

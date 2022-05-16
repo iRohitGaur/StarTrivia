@@ -109,6 +109,7 @@
   background: none;
   border: none;
   border-radius: 50%;
+  color: var(--TEXT);
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;

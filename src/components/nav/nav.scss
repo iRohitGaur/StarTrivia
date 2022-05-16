@@ -57,6 +57,7 @@
       background: none;
       border: none;
       border-radius: 50%;
+      color: $text;
       cursor: pointer;
       @include flex(0, null, center, center);
       padding: 0;

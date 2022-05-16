@@ -43,23 +43,20 @@ const extractedToken = localStorage.getItem("startrivia-user-token");
 
 export const verifyUser = createAsyncThunk(
   "user/verify",
-  async (_, { rejectWithValue }) => {
-    const token = localStorage.getItem("startrivia-user-token");
-    if (token) {
-      try {
-        const response = await axios.post(
-          "/api/auth/verify",
-          {},
-          {
-            headers: {
-              authorization: token,
-            },
-          }
-        );
-        return response.data;
-      } catch (error) {
-        return rejectWithValue(error.response.data.errors[0]);
-      }
+  async (token, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(
+        "/api/auth/verify",
+        {},
+        {
+          headers: {
+            authorization: token,
+          },
+        }
+      );
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response.data.errors[0]);
     }
   }
 );

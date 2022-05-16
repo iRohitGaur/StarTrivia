@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RiUser6Line, IcBaselineLogout } from "assets/Icons";
+import { RiUser6Line, IcBaselineLogout, IcBaselineLogin } from "assets/Icons";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import "./nav.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,14 +7,15 @@ import { logout } from "reducers/userSlice";
 import DarkModeButton from "./cta/DarkModeButton";
 
 export const Nav = () => {
-  const [toggleProfile, setToggleProfile] = useState(false);
-  const { pathname } = useLocation();
   const { user } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const handleLogin = () => {
+    navigate("/auth");
+  };
+
   const handleLogout = () => {
-    handleProfileToggle();
     dispatch(logout());
   };
 
@@ -26,15 +27,27 @@ export const Nav = () => {
         </NavLink>
         <div className="nav_right">
           <DarkModeButton />
-          {user && (
+          {user ? (
             <div className="cta">
               <NavLink to={"/profile"}>
                 <RiUser6Line />
               </NavLink>
-              <button className="logout_btn_wrapper" onClick={handleLogout}>
+              <button
+                title="logout"
+                className="logout_btn_wrapper"
+                onClick={handleLogout}
+              >
                 <IcBaselineLogout className="logout_btn" />
               </button>
             </div>
+          ) : (
+            <button
+              title="login"
+              className="login_btn_wrapper"
+              onClick={handleLogin}
+            >
+              <IcBaselineLogin className="login_btn" />
+            </button>
           )}
         </div>
       </div>

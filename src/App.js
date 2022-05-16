@@ -11,7 +11,10 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(verifyUser());
+    const token = localStorage.getItem("startrivia-user-token");
+    if (token) {
+      dispatch(verifyUser(token));
+    }
   }, []);
 
   return (

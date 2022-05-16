@@ -1,4 +1,5 @@
 @import url("https://starlingui.netlify.app/sui.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 :root {
   --PRIMARY: #6a5bdf;
   --PRIMARY-BASE: #7366e2;

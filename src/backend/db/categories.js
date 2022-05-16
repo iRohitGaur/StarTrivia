@@ -5,8 +5,18 @@
 
 export const categories = [
   {
-    _id: "",
-    categoryName: "",
-    description: "",
+    _id: "stvcat001",
+    categoryName: "Bird Quiz",
+    icon: "fa-dove",
+  },
+  {
+    _id: "stvcat002",
+    categoryName: "Photograhy Quiz",
+    icon: "fa-camera",
+  },
+  {
+    _id: "stvcat003",
+    categoryName: "Sanctuary Quiz",
+    icon: "fa-tree",
   },
 ];

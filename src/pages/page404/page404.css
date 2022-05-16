@@ -1,0 +1,10 @@
+.page_404 {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.page_404 div {
+  max-height: calc(100vh - 60px);
+}
+/*# sourceMappingURL=page404.css.map */

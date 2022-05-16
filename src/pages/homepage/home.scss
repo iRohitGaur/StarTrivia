@@ -1,0 +1,108 @@
+@import "../../styles/variables/variables.scss";
+
+.homepage_wrapper {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 60px);
+  width: 100vw;
+}
+
+.landing_wrapper {
+  background: $primary;
+  padding: 4rem;
+  place-items: center;
+  margin: auto;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 90vw;
+  height: fit-content;
+  overflow-y: scroll;
+}
+
+.title_wrapper {
+  width: 100%;
+}
+
+.app_title {
+  text-align: center;
+  color: $bg;
+}
+
+.app_caption {
+  color: $bg;
+  width: 60ch;
+  max-width: 95%;
+  text-align: justify;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.category_wrapper {
+  color: var(--BG-BASE-TEXT);
+  cursor: pointer;
+  border-radius: 8px;
+  background: var(--SHADE);
+  padding: 2rem;
+  width: 30ch;
+}
+
+.category_wrapper .fas,
+.category_wrapper .fab {
+  font-size: 5rem;
+  background: var(--BG);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.category_wrapper:hover {
+  color: var(--BG);
+  background: var(--SECONDARY);
+  transition: all 0.5s ease;
+}
+
+.category_wrapper:hover .fas,
+.category_wrapper:hover .fab {
+  color: var(--SECONDARY);
+  transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 799px) {
+  :root {
+    font-size: 9px;
+  }
+
+  .back_title_wrapper .category_cta,
+  .back_title_wrapper .quiz_cta {
+    position: revert;
+    align-self: flex-start;
+  }
+
+  .back_title_wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile_search {
+    display: revert;
+    width: 100%;
+  }
+
+  header {
+    padding: 1rem 2rem;
+    grid-template-areas:
+      "logo search cta"
+      "mobile-search mobile-search mobile-search";
+  }
+
+  .stv_search .sui_input {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .stv_cta {
+    gap: 0;
+  }
+}

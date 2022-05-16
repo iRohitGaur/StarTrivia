@@ -1,8 +1,8 @@
 import { SVGProps } from "react";
 
-export function NotoChicken(props: SVGProps<SVGSVGElement>) {
+export function NotoChicken(props) {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 128 128" {...props}>
+    <svg width="2.5rem" height="2.5rem" viewBox="0 0 128 128" {...props}>
       <path
         fill="#B1B1B1"
         d="M113.97 96.23L37.1 98.91s-3 13.81-2.25 16.05c.28.84 9.85-8.45 9.85-8.45s11.97 14.78 12.81 14.64c.84-.14 10-9.43 10-9.43s13.66 11.4 14.64 11.4s9.29-12.11 9.29-12.11s10.56 7.6 11.26 7.46c.7-.14 7.88-11.54 7.88-11.54s11.22 3.33 12.34 3.05c1.14-.28-5.01-12.2-8.95-13.75z"
@@ -45,9 +45,9 @@ export function NotoChicken(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-export function NotoV1Owl(props: SVGProps<SVGSVGElement>) {
+export function NotoV1Owl(props) {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 128 128" {...props}>
+    <svg width="2.5rem" height="2.5rem" viewBox="0 0 128 128" {...props}>
       <path
         fill="#885c52"
         d="M100.8 49.5c4.2-10.2.9-16-1-21.2c-1.7-4.6 3-6.9 3-6.9c-1.8 0-3.8-.8-3.8-.8c3.6-2.5 5.8-9.1 5.8-9.1c-2.5 2.3-5.9 2.4-5.9 2.4c5.6-5.4 3.9-12.9 3.9-12.9S97 8.8 86.2 13.5c-8.8 3.8-18.5 4.7-22.1 4.7c-3.6 0-13.3-.9-22.1-4.7C31.1 8.9 25.3 1 25.3 1s-1.8 7.5 3.9 12.9c0 0-3.4-.1-5.9-2.4c0 0 2.1 6.6 5.8 9.1c0 0-2 .8-3.8.8c0 0 4.7 2.3 3 6.9c-1.9 5.2-5.2 10.9-1 21.2c0 0-28.7 47.9 33.6 76.3c1 .5 2.1.7 3.2.7s2.2-.3 3.2-.7c62.2-28.4 33.5-76.3 33.5-76.3z"
@@ -133,7 +133,7 @@ export function NotoV1Owl(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function FluentHome16Regular(props: SVGProps<SVGSVGElement>) {
+export function FluentHome16Regular(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" {...props}>
       <path
@@ -144,7 +144,7 @@ export function FluentHome16Regular(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function FluentHome16Filled(props: SVGProps<SVGSVGElement>) {
+export function FluentHome16Filled(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" {...props}>
       <path
@@ -155,7 +155,7 @@ export function FluentHome16Filled(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function HeroiconsOutlineLightningBolt(props: SVGProps<SVGSVGElement>) {
+export function HeroiconsOutlineLightningBolt(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -170,7 +170,7 @@ export function HeroiconsOutlineLightningBolt(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function HeroiconsSolidLightningBolt(props: SVGProps<SVGSVGElement>) {
+export function HeroiconsSolidLightningBolt(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 20 20" {...props}>
       <path
@@ -183,7 +183,7 @@ export function HeroiconsSolidLightningBolt(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function IcRoundBookmarkBorder(props: SVGProps<SVGSVGElement>) {
+export function IcRoundBookmarkBorder(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -194,7 +194,7 @@ export function IcRoundBookmarkBorder(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function IcRoundBookmark(props: SVGProps<SVGSVGElement>) {
+export function IcRoundBookmark(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -205,7 +205,7 @@ export function IcRoundBookmark(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function RiUser6Line(props: SVGProps<SVGSVGElement>) {
+export function RiUser6Line(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -216,7 +216,7 @@ export function RiUser6Line(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function RiUser6Fill(props: SVGProps<SVGSVGElement>) {
+export function RiUser6Fill(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -227,7 +227,7 @@ export function RiUser6Fill(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function MdiCardsHeartOutline(props: SVGProps<SVGSVGElement>) {
+export function MdiCardsHeartOutline(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -238,7 +238,7 @@ export function MdiCardsHeartOutline(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function MdiCardsHeart(props: SVGProps<SVGSVGElement>) {
+export function MdiCardsHeart(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -249,7 +249,7 @@ export function MdiCardsHeart(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function TablerMessageCircle2(props: SVGProps<SVGSVGElement>) {
+export function TablerMessageCircle2(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -264,9 +264,9 @@ export function TablerMessageCircle2(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function IcBaselineLogout(props: SVGProps<SVGSVGElement>) {
+export function IcBaselineLogout(props) {
   return (
-    <svg width="2rem" height="2rem" viewBox="0 0 24 24" {...props}>
+    <svg width="2.4rem" height="2.4rem" viewBox="0 0 24 24" {...props}>
       <path
         fill="currentColor"
         d="m17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"
@@ -275,7 +275,7 @@ export function IcBaselineLogout(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function IcRoundAddBox(props: SVGProps<SVGSVGElement>) {
+export function IcRoundAddBox(props) {
   return (
     <svg width="3rem" height="3rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -286,7 +286,7 @@ export function IcRoundAddBox(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function IcRoundAdd(props: SVGProps<SVGSVGElement>) {
+export function IcRoundAdd(props) {
   return (
     <svg width="3rem" height="3rem" viewBox="0 0 24 24" {...props}>
       <path
@@ -297,7 +297,7 @@ export function IcRoundAdd(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function MiOptionsVertical(props: SVGProps<SVGSVGElement>) {
+export function MiOptionsVertical(props) {
   return (
     <svg width="2.5rem" height="2.5rem" viewBox="0 0 24 24" {...props}>
       <path

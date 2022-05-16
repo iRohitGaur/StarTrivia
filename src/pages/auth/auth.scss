@@ -1,0 +1,50 @@
+@import "../../styles/variables/variables.scss";
+
+.auth_page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+.auth_wrapper {
+  background: $bg;
+  border-radius: 4px;
+  width: 32rem;
+  height: fit-content;
+  border: $border;
+  padding: 2rem 0;
+  @include flex(1rem, column, center, center);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  input {
+    background: $bg;
+    width: 80%;
+    border: $border;
+    border-radius: 2px;
+    padding: 5px 1rem;
+  }
+
+  input:focus {
+    outline: 1px solid $primary;
+  }
+
+  .toggle_auth {
+    font-size: 1.4rem;
+  }
+
+  .signup_btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: $primary;
+  }
+
+  .signup_btn:hover {
+    color: $primarylight1;
+  }
+}

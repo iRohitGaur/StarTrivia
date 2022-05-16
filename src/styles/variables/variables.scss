@@ -1,0 +1,50 @@
+$primarydark2: var(--PRIMARY-DARK2);
+$primarydark1: var(--PRIMARY-DARK1);
+$primary: var(--PRIMARY);
+$primarylight1: var(--PRIMARY-LIGHT1);
+$primarylight2: var(--PRIMARY-LIGHT2);
+
+$dangerdark2: var(--VARIANT-1-DARK2);
+$dangerdark1: var(--VARIANT-1-DARK1);
+$danger: var(--VARIANT-1);
+$dangerlight1: var(--VARIANT-1-LIGHT1);
+$dangerlight2: var(--VARIANT-1-LIGHT2);
+
+$successdark2: var(--VARIANT-2-DARK2);
+$successdark1: var(--VARIANT-2-DARK1);
+$success: var(--VARIANT-2);
+$successlight1: var(--VARIANT-2-LIGHT1);
+$successlight2: var(--VARIANT-2-LIGHT2);
+
+$warningdark2: var(--VARIANT-3-DARK2);
+$warningdark1: var(--VARIANT-3-DARK1);
+$warning: var(--VARIANT-3);
+$warninglight1: var(--VARIANT-3-LIGHT1);
+$warninglight2: var(--VARIANT-3-LIGHT2);
+
+$bgdark2: var(--GRAY-DARK);
+$bgdark1: var(--GRAY);
+$bg: var(--BG);
+$text: var(--TEXT);
+$textgray: #707070;
+$shade: var(--SHADE);
+
+$white: var(--WHITE);
+$black: var(--BLACK);
+$caption: #c67000;
+$red: red;
+$green: green;
+$gray: #ababab;
+$grayOp5: #ababab99;
+$yellow: #ed9f3a;
+$orange: #f45b19;
+
+$border: 1px solid $gray;
+
+@mixin flex($gap, $direction: null, $align: null, $justify: null) {
+  display: flex;
+  gap: $gap;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}

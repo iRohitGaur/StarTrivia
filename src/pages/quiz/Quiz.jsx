@@ -4,12 +4,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { getQuiz } from "reducers/categorySlice";
 import "./quiz.css";
+import { Rules } from "./Rules";
 
 export const Quiz = () => {
   const initialAns = { ans: "", status: false };
   const [question, setQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(initialAns);
+  const [showModal, setShowModal] = useState(true);
   const { quizId } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -41,7 +43,7 @@ export const Quiz = () => {
                   <button
                     onClick={() => {
                       if (question + 1 === quiz.mcqs.length) {
-                        navigate("/result", { quiz, score });
+                        navigate("/score", { state: { quiz, score } });
                       } else {
                         setQuestion((q) => q + 1);
                       }
@@ -107,6 +109,7 @@ export const Quiz = () => {
           />
         </div>
       )}
+      {showModal && <Rules setShowModal={setShowModal} />}
     </div>
   );
 };

@@ -1,0 +1,18 @@
+@import "../../styles/variables/variables.scss";
+
+.score_page_wrapper {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 60px);
+  width: 100vw;
+  color: $white;
+
+  .qna_wrapper {
+    @include flex(2rem, column);
+  }
+
+  .sp_question,
+  .sp_answer {
+    @include flex(1rem);
+  }
+}

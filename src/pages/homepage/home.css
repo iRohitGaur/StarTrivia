@@ -35,9 +35,13 @@
   color: var(--BG);
   width: 60ch;
   max-width: 95%;
-  text-align: justify;
+  text-align: center;
   font-weight: 400;
   padding-bottom: 2rem;
+}
+
+.quiz_categories {
+  width: 100%;
 }
 
 .category_wrapper {
@@ -46,7 +50,11 @@
   border-radius: 8px;
   background: var(--SHADE);
   padding: 2rem;
-  width: 30ch;
+  width: 100%;
+}
+
+.category_wrapper h5 {
+  white-space: nowrap;
 }
 
 .category_wrapper .fas,
@@ -74,6 +82,9 @@
 @media only screen and (max-width: 799px) {
   :root {
     font-size: 9px;
+  }
+  .landing_wrapper {
+    padding: 1rem;
   }
   .back_title_wrapper .category_cta,
   .back_title_wrapper .quiz_cta {

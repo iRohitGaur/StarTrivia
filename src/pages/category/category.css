@@ -1,0 +1,18 @@
+.category_page_wrapper {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 60px);
+  width: 100vw;
+}
+
+.back_title_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.category_cta {
+  position: absolute;
+  left: 0;
+}
+/*# sourceMappingURL=category.css.map */

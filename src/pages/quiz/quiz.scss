@@ -65,3 +65,34 @@
   background: var(--VARIANT-1-DARK2);
   color: var(--BG);
 }
+
+.modal_landing_wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $bg;
+  display: grid;
+  place-items: center;
+  z-index: 999;
+
+  li {
+    color: $white;
+  }
+
+  .rules_cta {
+    width: 100%;
+    @include flex(1rem, null, center, space-between);
+  }
+
+  button {
+    width: fit-content;
+  }
+
+  .play_btn {
+    box-shadow: 0 0 2px $white;
+  }
+}

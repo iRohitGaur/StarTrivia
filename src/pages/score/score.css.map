@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,mBAAmB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,kBAAkB;EAC1B,KAAK,EAAE,KAAK;EACZ,KAAK,ECwBC,YAAY;CDdnB;;AAfD,AAOE,mBAPiB,CAOjB,YAAY,CAAC;ECmCb,OAAO,EAAE,IAAI;EACb,GAAG,EDnCa,IAAI;ECoCpB,cAAc,EDpCQ,MAAM;CAC3B;;AATH,AAWE,mBAXiB,CAWjB,YAAY;AAXd,mBAAmB,CAYjB,UAAU,CAAC;EC8BX,OAAO,EAAE,IAAI;EACb,GAAG,ED9Ba,IAAI;CACnB",
+    "sources": [
+        "score.scss",
+        "../../styles/variables/variables.scss"
+    ],
+    "names": [],
+    "file": "score.css"
+}

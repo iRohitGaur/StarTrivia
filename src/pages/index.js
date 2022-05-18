@@ -3,3 +3,4 @@ export { Home } from "./homepage/Home";
 export { Page404 } from "./page404/Page404";
 export { Category } from "./category/Category";
 export { Quiz } from "./quiz/Quiz";
+export { Score } from "./score/Score";

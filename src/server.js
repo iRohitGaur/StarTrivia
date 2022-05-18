@@ -73,7 +73,7 @@ export function makeServer({ environment = "development" } = {}) {
 
       // categories routes (public)
       this.get("/categories", getAllCategoriesHandler.bind(this));
-      this.get("/categories/:categoryName", getCategoryQuizesHandler.bind(this));
+      this.get("/categories/:categoryId", getCategoryQuizesHandler.bind(this));
 
       // quizes routes (private)
       this.post("/quizzes", addQuizHandler.bind(this));

@@ -117,7 +117,7 @@ export const addQuizHandler = function (schema, request) {
       _id: uuid(),
       createdAt: formatDate(),
       updatedAt: formatDate(),
-      catergoryName: "",
+      categoryId: "",
       ...quiz,
     };
     const createdQuiz = schema.quizzes.create(newQuiz);

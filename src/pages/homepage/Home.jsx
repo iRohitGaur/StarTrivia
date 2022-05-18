@@ -11,7 +11,9 @@ export const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    dispatch(getCategories());
+    if (categories.length === 0) {
+      dispatch(getCategories());
+    }
   }, []);
 
   return (
@@ -25,7 +27,7 @@ export const Home = () => {
               on top of the scoreboard. Select any category to see the relevant
               quiz.
             </h5>
-            <div className="quiz_categories flex_row flex_align_center flex_wrap flex_justify_around flex_gap2">
+            <div className="quiz_categories flex_row flex_align_center flex_justify_around flex_gap2">
               {categories.map((cat) => (
                 <div
                   key={cat._id}

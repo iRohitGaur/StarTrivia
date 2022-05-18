@@ -1,5 +1,5 @@
 import { Nav, RestrictedRoute } from "components";
-import { Auth, Home, Page404 } from "pages";
+import { Auth, Category, Home, Page404, Quiz } from "pages";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Routes, Route } from "react-router-dom";
@@ -23,6 +23,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/category/:categoryId" element={<Category />} />
+        <Route path="/quiz/:quizId" element={<Quiz />} />
 
         <Route element={<RestrictedRoute />}>
           <Route path="/auth" element={<Auth />} />

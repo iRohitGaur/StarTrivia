@@ -2,15 +2,15 @@
 
 <div align="center">
 
-<img alt="starling" src="./assets/starling.svg" width="1048px" height="238px" />
+<img alt="starling" src="./src/assets/starling.svg" width="1048px" height="238px" />
 
-StarTrivia tests your knowledge in the world of birds; fly high with your name on top of the scoreboard.
+StarTrivia tests your knowledge in the world of birds and photography; fly high with your name on top of the scoreboard.
 
 [![GitHub followers](https://img.shields.io/github/followers/irohitgaur?style=social)](https://github.com/irohitgaur)
 &emsp;
-![Forks](https://img.shields.io/github/forks/irohitgaur/starlingui)
+![Forks](https://img.shields.io/github/forks/irohitgaur/startrivia)
 &emsp;
-![Stars](https://img.shields.io/github/stars/irohitgaur/starlingui)
+![Stars](https://img.shields.io/github/stars/irohitgaur/startrivia)
 &emsp;
 [![Twitter Follow](https://img.shields.io/twitter/follow/irohitgaur?style=social)](https://twitter.com/iRohitGaur)
 
@@ -23,26 +23,72 @@ StarTrivia tests your knowledge in the world of birds; fly high with your name o
 ---
 
 ## Video Demo:
+
 https://user-images.githubusercontent.com/10892977/155002489-23c49d68-5e81-4d12-a106-db3d350c0509.mp4
 
 ---
 
-## Quick Start
+## Built using:
+**Client:**
+- [ReactJS](https://reactjs.org/) - Frontend JavaScript library.
+- [React Router](https://reactrouter.com/) - Frontend routing & navigation.
+- [Redux](https://redux.js.org/) - Centralized state management.
+- [React-Redux](https://react-redux.js.org/) - Official React bindings for Redux.
+- [Redux Thunk](https://redux-toolkit.js.org/) - Middleware to perform delayed, asynchronous tasks.
+- [Starling UI](https://starlingui.netlify.app/) - Component Library.
+- [SCSS](https://sass-lang.com/) - CSS preprocessor.
 
-To view different pages of StarTrivia you can visit the following links: 
+**Server:**
+- [Mockbee](https://mockbee.netlify.app/) - Mock Backend.
+---
 
-### P0 Screens
+### Features
 
-- [Home](https://startrivia.netlify.app/)
-- [Category-wise Quiz](https://startrivia.netlify.app/category/category.html)
-- [Rules Page](https://startrivia.netlify.app/rules/rules.html)
-- [Quiz Page](https://startrivia.netlify.app/quiz/quiz.html)
-- [Result Page](https://startrivia.netlify.app/result/result.html)
-
-### Features Added
-
-- Responsive Site (Both desktop and mobile responsive)
+- Home page with all the Quiz categories
+- Cateory page with all the Quiz in that category
+- Rules Page before attempting Quiz
+- MCQ based Quiz Question Page
+- Quit Quiz
+- Result Page with Answers & Score
+- Authentication
+- Responsive Site
+- Loading & Alerts
 - Light & Dark mode
+- Remember login
+
+---
+
+### Upcoming Features
+
+- Leaderboard
+- Timer for Quiz Questions
+- Search Quiz
+- Forgot Password
+- User Profile Page
+- Create Quizzes
+- Share Quiz
+- Play with Multiple Quiz Partners
+
+---
+
+## Run Locally
+
+- Clone the project
+  `git clone https://github.com/iRohitGaur/StarTrivia.git`
+- Go to the project directory
+- cd StarTrivia
+- Install dependencies
+  `yarn install`
+- Create a **.env** file
+
+- Add the following configuration to your .env file
+
+```
+REACT_APP_JWT_SECRET=<random string here>
+```
+
+- Start the server
+  `yarn start`
 
 ---
 

@@ -24,7 +24,7 @@ StarTrivia tests your knowledge in the world of birds and photography; fly high 
 
 ## Video Demo:
 
-https://user-images.githubusercontent.com/10892977/155002489-23c49d68-5e81-4d12-a106-db3d350c0509.mp4
+https://user-images.githubusercontent.com/10892977/169262516-bae171ac-c4d1-4d39-8b56-37652989fd07.mp4
 
 ---
 

@@ -79,6 +79,10 @@
     font-size: 9px;
   }
 
+  .homepage_wrapper {
+    padding: 2rem 0;
+  }
+
   .landing_wrapper {
     padding: 1rem;
   }
@@ -86,12 +90,23 @@
   .back_title_wrapper .category_cta,
   .back_title_wrapper .quiz_cta {
     position: revert;
-    align-self: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .back_title_wrapper .quiz_cta button {
+    width: fit-content;
   }
 
   .back_title_wrapper {
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
     gap: 2rem;
+  }
+
+  .quiz_categories {
+    flex-wrap: wrap;
   }
 }
 

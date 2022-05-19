@@ -4,6 +4,7 @@
   place-items: center;
   height: calc(100vh - 60px);
   width: 100vw;
+  padding: 2rem 0;
 }
 
 .landing_wrapper {
@@ -20,11 +21,16 @@
 .quiz_cta {
   position: absolute;
   left: 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.quiz_cta_right {
-  position: absolute;
-  right: 0;
+.quiz_cta button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .question_score,

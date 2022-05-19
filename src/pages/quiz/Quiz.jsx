@@ -36,10 +36,7 @@ export const Quiz = () => {
                 >
                   Quit
                 </button>
-              </div>
-              <h2 className="app_title">{quiz.categoryName}</h2>
-              {answered.status && (
-                <div className="quiz_cta_right flex_row flex_align_center flex_gap2">
+                {answered.status && (
                   <button
                     onClick={() => {
                       if (question + 1 === quiz.mcqs.length) {
@@ -53,8 +50,9 @@ export const Quiz = () => {
                   >
                     {question + 1 === quiz.mcqs.length ? "Finish" : "Next"}
                   </button>
-                </div>
-              )}
+                )}
+              </div>
+              <h2 className="app_title">{quiz.categoryName}</h2>
             </div>
 
             <div className="question_score flex_row flex_align_center flex_gap1">

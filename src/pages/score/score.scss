@@ -6,6 +6,7 @@
   height: calc(100vh - 60px);
   width: 100vw;
   color: $white;
+  padding: 2rem 0;
 
   .qna_wrapper {
     @include flex(2rem, column);

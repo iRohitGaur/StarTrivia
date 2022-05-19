@@ -5,6 +5,7 @@
   height: calc(100vh - 60px);
   width: 100vw;
   color: var(--WHITE);
+  padding: 2rem 0;
 }
 
 .score_page_wrapper .qna_wrapper {

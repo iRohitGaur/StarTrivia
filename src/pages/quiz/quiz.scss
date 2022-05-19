@@ -5,6 +5,7 @@
   place-items: center;
   height: calc(100vh - 60px);
   width: 100vw;
+  padding: 2rem 0;
 }
 .landing_wrapper {
   max-width: 1000px;
@@ -18,10 +19,12 @@
 .quiz_cta {
   position: absolute;
   left: 0;
-}
-.quiz_cta_right {
-  position: absolute;
-  right: 0;
+  width: 100%;
+  justify-content: space-between;
+
+  button {
+    width: fit-content;
+  }
 }
 .question_score,
 .question_options_wrapper {

@@ -89,7 +89,3 @@ REACT_APP_JWT_SECRET=<random string here>
 
 - Start the server
   `yarn start`
-
----
-
-#### Learning and Growing with [@neogcamp](https://twitter.com/neogcamp)
